@@ -1,0 +1,66 @@
+<html>
+<head>
+<style>
+body{
+background-image : url(login_bg.jpg);
+background-repeat: no-repeat;
+background-attachment: fixed;  
+background-size: cover;
+}
+
+div.first {
+border-style: hidden;
+background: rgb(180, 180, 180, 0.3);
+border: 0px rgb(180, 180, 180, 0.3);
+padding: 100px 30px;
+margin: 40px 300px;
+}
+div{
+float: left;
+width: 50%;
+height: 20%;
+}
+div.third{
+padding: 0px 400px;
+}
+label{
+font-family: courier;
+font-size: 160%;
+}
+input[type = button] {
+border-style: inset outset;
+border-width: 5px;
+padding: 5px; 
+background-color: grey; 
+color: black; 
+font-family: courier;
+text-decoration-color: rgb(0,0,0);
+font-size: 20px;
+}
+@media screen and (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
+}
+
+</style>
+</head>
+<body>
+<div class = "first">
+<div class = "second">
+<strong><label style = "padding: 0px 100px;">LOGIN</label></strong>
+<img src = "login_icon.png">
+</div>
+<div class = "third">
+<form><b>
+<label for = "id">USER ID:</label><br><br>
+<input type = "text" id = "user_id" name = "id" style = "border: 2px solid black; height: 120%; width: 70%"><br><br><br>
+<label for = "pwd">PASSWORD:</label><br><br>
+<input type = "password" id = "pwd" name = "pwd" style = "border: 2px solid black; height: 120%; width: 70%"><br></b>
+<a href = "" style = "color: black; padding: 110px; font-size: 100%;">forgot password?</a><br><br><br>
+<input type = "button" id = "submit" name = "submit" value = "LOGIN">
+</form>
+</div>
+</div>
+</body>
+</html>
